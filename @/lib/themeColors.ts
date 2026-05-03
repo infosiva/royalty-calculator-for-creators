@@ -1,0 +1,1 @@
+Verify that the COLOR_MAP object and the getMeshStyle and getScrollbarColor functions are correctly defined and exported in the themeColors.ts file.
