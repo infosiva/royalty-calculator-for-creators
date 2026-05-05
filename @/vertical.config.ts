@@ -1,9 +1,13 @@
 export default {
-  "metaTitle": "Royalty Calculator",
-  "metaDescription": "Calculate royalties for creators",
-  "keywords": "royalty calculator, creator tools",
-  "themeColor": "violet",
-  "name": "Royalty Calculator",
-  "subjects": [],
-  "isAiTool": () => false
+  // existing properties...
+}
+
+// or, if config is being imported elsewhere
+import config from './config'
+
+try {
+  // Use config here
+} catch (error) {
+  console.error('Error loading config:', error)
+  // Optionally, return a default config or rethrow
 }
