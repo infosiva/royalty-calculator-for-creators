@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title:       config.metaTitle,
-  description: 'Effortlessly calculate digital royalties with RoyalTrack. Get accurate estimates and simplify revenue management for your digital creations.',
+  description: 'Calculate digital royalties effortlessly with RoyalTrack. Get accurate estimates, simplify revenue management, and maximize your earnings as a digital creator.',
   keywords:    config.keywords,
 }
 
