@@ -39,7 +39,7 @@ export default function HomePage() {
           {/* Two CTAs: solo play + create room */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
             <Link href="/play?mode=solo" className={btn.primary + ' text-base px-8 py-3.5'}>
-              Play Solo <ArrowRight size={16} />
+              Start Calculating Now <ArrowRight size={16} />
             </Link>
             <Link href="/play?mode=create" className={btn.secondary + ' text-base px-8 py-3.5'}>
               <Users size={16} /> Play with Others
