@@ -1,6 +1,8 @@
 module.exports = {
-  // Add this line to ensure proper DNS resolution
-  experimental: {
-    externalDir: true,
+  //...
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
   },
-};
+  //...
+}
