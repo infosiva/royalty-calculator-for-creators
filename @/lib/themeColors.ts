@@ -1,17 +1,5 @@
-export function getMeshStyle(themeColor: string) {
-  try {
-    // existing implementation
-  } catch (error) {
-    console.error('Error in getMeshStyle:', error);
-    return {};
-  }
-}
+Make sure to export getScrollbarColor function or move it above the usage in layout.tsx. Alternatively, you may create a minimal stub like this:
 
-export function getScrollbarColor(themeColor: string) {
-  try {
-    // existing implementation
-  } catch (error) {
-    console.error('Error in getScrollbarColor:', error);
-    return '';
-  }
+export function getScrollbarColor(themeColor: string): string {
+  return 'currentColor';
 }
