@@ -1,14 +1,7 @@
-export const COLOR_MAP = {
-  violet: {
-    primary: '#7A288A',
-    secondary: '#9B51E0',
-    base: '#f7f7f7'
-  },
-  // Add more color maps as needed
-};
 export const getMeshStyle = (themeColor: string) => {
-  // Implement mesh style logic here
-};
-export const getScrollbarColor = (themeColor: string) => {
-  // Implement scrollbar color logic here
-};
+  const gradient = COLOR_MAP[themeColor];
+  if (!gradient) {
+    throw new Error('Invalid theme color: ${themeColor}');
+  }
+  // ... rest of the function
+}
