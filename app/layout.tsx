@@ -1,5 +1,4 @@
 import { ErrorBoundary } from 'react-error-boundary';
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <ErrorBoundary
@@ -18,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           } as React.CSSProperties
         }
       >
-        <body className={'${inter.className} min-h-full flex flex-col text-white'}
+        <body className={' ${inter.className} min-h-full flex flex-col text-white'}
           style={{ background: colors.base }}
         >
           <div style={meshStyle} />
