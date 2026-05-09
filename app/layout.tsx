@@ -1,12 +1,16 @@
+import { ErrorBoundary } from 'react-error-boundary';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  try {
-    return (
+  return (
+    <ErrorBoundary
+      fallback={<div>Error: An unexpected error occurred.</div>}
+      onError={(error) => console.error(error)}
+    >
       <html
         lang="en"
         className="h-full"
         style={
           {
-            // CSS vars consumed by globals.css animations and scrollbar
             '--theme-primary':   colors.primary,
             '--theme-secondary': colors.secondary,
             '--theme-base':      colors.base,
@@ -17,7 +21,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body className={'${inter.className} min-h-full flex flex-col text-white'}
           style={{ background: colors.base }}
         >
-          {/* Dynamic mesh gradient bg — changes per vertical */}
           <div style={meshStyle} />
 
           <Navbar />
@@ -38,9 +41,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </footer>
         </body>
       </html>
-    );
-  } catch (error) {
-    console.error(error);
-    return <div>Error: {error.message}</div>;
-  }
+    </ErrorBoundary>
+  );
 }
