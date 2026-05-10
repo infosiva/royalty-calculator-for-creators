@@ -3,9 +3,11 @@ import { useEffect } from 'react';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    window.addEventListener('error', (event) => {
-      console.error(event.error);
-    });
+    if (typeof window !== 'undefined') {
+      window.addEventListener('error', (event) => {
+        console.error(event.error);
+      });
+    }
   }, []);
   return (
     <ErrorBoundary
