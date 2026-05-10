@@ -4,6 +4,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <ErrorBoundary
       fallback={<div>Error: An unexpected error occurred.</div>}
       onError={(error) => console.error(error)}
+      resetKeys={["error"]}
     >
       <html
         lang="en"
