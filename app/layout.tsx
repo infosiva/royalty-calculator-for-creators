@@ -1,10 +1,17 @@
 import { ErrorBoundary } from 'react-error-boundary';
+import { useEffect } from 'react';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    window.addEventListener('error', (event) => {
+      console.error(event.error);
+    });
+  }, []);
   return (
     <ErrorBoundary
       fallback={<div>Error: An unexpected error occurred.</div>}
       onError={(error) => console.error(error)}
-      resetKeys={["error"]}
+      resetKeys={['error']}
     >
       <html
         lang="en"
