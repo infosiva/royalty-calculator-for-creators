@@ -3,10 +3,14 @@ import { useEffect } from 'react';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('error', (event) => {
-        console.error(event.error);
-      });
+    try {
+      if (typeof window !== 'undefined') {
+        window.addEventListener('error', (event) => {
+          console.error(event.error);
+        });
+      }
+    } catch (error) {
+      console.error('Error in useEffect:', error);
     }
   }, []);
   return (
