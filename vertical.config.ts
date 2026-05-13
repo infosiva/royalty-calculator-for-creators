@@ -2,7 +2,7 @@
 const config = {
   name: "RoyalTrack",
   tagline: "Simplify your digital royalties",
-  description: "RoyalTrack helps digital creators easily calculate and track royalties from various sales platforms. Efficiently manage your digital downloads revenue.",
+  description: "Get accurate royalty estimates with RoyalTrack. Simplify your digital royalties with our easy-to-use calculator and tracking tools.",
   primaryColor: "emerald",
   accentColor: "green",
   features: ["Easy royalty calculation","Sales data management","Exportable results"],

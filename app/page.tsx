@@ -33,13 +33,13 @@ export default function HomePage() {
           </h1>
 
           <p className="text-white/50 text-base sm:text-lg mb-6 sm:mb-8 max-w-xl mx-auto leading-relaxed">
-            Pick a topic, add your players. AI creates age-perfect questions for each person — play solo, with family, or with friends online. Trusted by thousands of creators. Get accurate royalty estimates with RoyalTrack.
+            Pick a topic, add your players. AI creates age-perfect questions for each person — play solo, with family, or with friends online. Trusted by thousands of creators. Get started with RoyalTrack today and take control of your digital royalties.. Get accurate royalty estimates with RoyalTrack.
           </p>
 
           {/* Two CTAs: solo play + create room */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
             <Link href="/play?mode=solo" className={btn.primary + ' text-base px-8 py-3.5'}>
-              Get Started with RoyalTrack <ArrowRight size={16} />
+              Get Accurate Royalty Estimates <ArrowRight size={16} />
             </Link>
             <Link href="/play?mode=create" className={btn.secondary + ' text-base px-8 py-3.5'}>
               <Users size={16} /> Play with Others
