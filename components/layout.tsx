@@ -1,1 +1,1 @@
-span> {new Date().getFullYear()} {config?.name}. All rights reserved./span>
+Replace the line: <span> {new Date().getFullYear()} {config.name}. All rights reserved.</span> with: <span> {new Date().getFullYear()} {config?.name}. All rights reserved.</span>
