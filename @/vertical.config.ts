@@ -1,5 +1,6 @@
-export default function config {
-  // ... existing code ...
+/* Ensure this file exists and is correctly exported */
+export default {
   name: 'Royalty Calculator',
-  // ... existing code ...
+  subjects: [],
+  // Other properties...
 }
