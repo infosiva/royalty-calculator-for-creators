@@ -1,1 +1,5 @@
-{"images": {"domains": ["royaltycalculator.app"]}, "env": {"NEXT_PUBLIC_SITE_URL": "https://royaltycalculator.app"}, "headers": async () => { return [ { source: "/_next/image", headers: [ { key: "Cache-Control", value: "public, max-age=31536000" } ] } ]; }}
+module.exports = {
+  target: 'serverless',
+  basePath: '',
+  // other configurations...
+}
