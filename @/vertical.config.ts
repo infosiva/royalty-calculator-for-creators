@@ -1,6 +1,6 @@
-/* Ensure this file exists and is correctly exported */
-export default {
+import type { VerticalConfig } from '@/types';
+const config: VerticalConfig = {
   name: 'Royalty Calculator',
   subjects: [],
-  // Other properties...
-}
+};
+export default config;
