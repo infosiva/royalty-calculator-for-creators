@@ -1,5 +1,6 @@
 module.exports = {
-  target: 'serverless',
-  basePath: '',
-  // other configurations...
+  //...
+  images: {
+    domains: ['royaltycalculator.app'] // add your domain here
+  }
 }
